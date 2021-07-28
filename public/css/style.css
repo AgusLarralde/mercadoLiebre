@@ -99,7 +99,7 @@ main {
     width: 90%;
 }
 
-main section .titulares {
+main section .title {
     font-size: 24px;
     color: #666;
 }
@@ -114,13 +114,13 @@ main section article .img {
     height: 100%;
 }
 
-main section article .linea {
+main section article .line {
     border: solid 1px #ebebeb;
     padding: 15px 15px 15px 15px;
     position: relative;
 }
 
-main section article #envio {
+main section article #shipping {
     border: solid #39b54a 1px;
     font-size: 16px;
     color: #39b54a;
@@ -142,29 +142,37 @@ main section article .p-d-box {
     margin-bottom: 10px;
 }
 
-main section article .precios {
+main section article .price {
     font-size: 18px;
     margin-right: 10px;
 }
 
-main section article .descuentos {
+main section article .discont {
     font-size: 16px;
     color: #39b54a;
 }
 
-main section article .descripciones {
+main section article .description {
     font-size: 16px;
     color: #666;
+    display: none;
+}
+main section article .description:hover {
+    display: flex;
 }
 
 footer {
+    background-color: white;
+}
+
+footer .footer{
     background-color: white;
     color: #666;
     text-align: center;
     padding: 15%;
 }
 
-footer .icono {
+footer .icon {
     color: #1259c3;
     text-align: center;
     font-size: 2em;
@@ -182,10 +190,10 @@ footer p {
     text-align: center;
 }
 
-.copyrigth {
+footer .copyrigth {
+    color: #666;
     text-align: left;
     font-size: 12px;
-    color: #666;
 }
 
 /*Acá se encuentra el estilo en css del login.html*/
@@ -221,6 +229,7 @@ main .login-button {
 }
 main .login-button:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    background-color: #0022AA;
 }
 
 main #login-text {
@@ -294,7 +303,7 @@ main #register-text {
         width: 100%;
         height: 100%;
     }
-    main section article .descripciones {
+    main section article .description {
         display: none;
     }
     /*Login*/
@@ -351,24 +360,30 @@ main #register-text {
     }
 }
 
-/*@keyframes agrandando {
-    0% {
-    width: 0x;
-    height: 0px;
+@media (min-width: 1100px){
+    footer {
+        position: relative;
+    }
+    footer .footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    footer .sub-footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 32%;
+    }
+    footer .icon:hover {
+        color: rgb(55, 158, 255);
+    }
+    footer .copyrigth {
+        background-color: white;
+        position: absolute;
+        top: 325px;    
+    }
 }
-
-100% {
-    width: 100px;
-    height: 100px;
-    color: yellow;
-}
-}
-
-.fas fa-truck {
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-name: agrandando;
-    animation-duration: 1000ms;
-
-}
-*/
