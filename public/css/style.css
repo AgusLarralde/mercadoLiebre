@@ -1,0 +1,374 @@
+/*Acá se encuentra el estilo en css del home.html*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header .box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+header .log {
+    width: 40%;
+    margin-bottom: 10px;
+}
+header .search {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 10px;
+}
+header .icon {
+    background-color: white;
+    border: solid 0.5px black;
+    border-radius: 5%;
+}
+
+header .option {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+header .option1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+header .o1a, .o1b, .o1c, .o1d {
+    margin-right: 12px;
+}
+header .option2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+header .o2a, .o2b, .o2c {
+    margin-right: 12px;
+}
+
+header .burger-menu {
+    color: white;
+    background-color: #1259c3;
+    border-radius: 5px;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section .banner-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+section .banner {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    margin: auto;
+    width: 90vw;
+    width: 90%;
+}
+
+main section .titulares {
+    font-size: 24px;
+    color: #666;
+}
+
+main section article {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+main section article .img {
+    width: 100%;
+    height: 100%;
+}
+
+main section article .linea {
+    border: solid 1px #ebebeb;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+}
+
+main section article #envio {
+    border: solid #39b54a 1px;
+    font-size: 16px;
+    color: #39b54a;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section article .p-d-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+
+main section article .precios {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+main section article .descuentos {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+main section article .descripciones {
+    font-size: 16px;
+    color: #666;
+}
+
+footer {
+    background-color: white;
+    color: #666;
+    text-align: center;
+    padding: 15%;
+}
+
+footer .icono {
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+    line-height: 10px;
+}
+
+footer .h3 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+footer p {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+}
+
+.copyrigth {
+    text-align: left;
+    font-size: 12px;
+    color: #666;
+}
+
+/*Acá se encuentra el estilo en css del login.html*/
+
+main .login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+main .login-input {
+    margin-bottom: 10px;
+    width: 350px;
+    height: 35px;
+    font-size: 20px;
+}
+main .login-input:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main .login-box-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main .login-button {
+    background-color: #1259c3;
+    color: white;
+    width: 350px;
+    height: 35px
+}
+main .login-button:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main #login-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Acá se encuentra el estilo en css del register.html*/
+
+main .register {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+main .register-input {
+    margin-bottom: 10px;
+    width: 350px;
+    height: 35px;
+    font-size: 20px;
+}
+main .register-input:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main .register-box-button-send {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+main .register-button-send {
+    background-color: #1259c3;
+    color: white;
+    width: 350px;
+    height: 35px
+}
+main .login-button-send:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main .register-box-button-delete {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main .register-button-delete {
+    background-color: rgb(180, 52, 52);
+    color: white;
+    width: 350px;
+    height: 35px
+}
+main .register-button-delete:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main #register-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Acá se encuentra el estilo en css REPONSIVE*/
+
+@media (max-width: 361px) {
+    nav {
+        display: none;
+    }    
+    main section article {
+        width: 100%;
+        height: 100%;
+    }
+    main section article .descripciones {
+        display: none;
+    }
+    /*Login*/
+    main .login-input {
+        width: 200px;
+    }
+    main .login-button {
+        width: 200px;
+    }
+        /*Register*/
+    main .register-input {
+        width: 200px;
+    }
+    main .register-button-delete {
+        width: 200px;
+    }
+    main .register-button-send {
+        width: 200px;
+    }
+}
+
+@media (min-width: 769px) {
+    header .burger-menu {
+        visibility: hidden;
+    }
+    header .log {
+        width: 30%;
+    }
+    header .search {
+        width: 30%
+    }
+    header .credit {
+        width: 40%;
+    }
+    main section article:hover { 
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    /*Login*/
+    main .login-input {
+        width: 700px;
+    }
+    main .login-button {
+        width: 700px;
+    }
+    /*Register*/
+    main .register-input {
+        width: 700px;
+    }
+    main .register-button-delete {
+        width: 700px;
+    }
+    main .register-button-send {
+        width: 700px;
+    }
+}
+
+/*@keyframes agrandando {
+    0% {
+    width: 0x;
+    height: 0px;
+}
+
+100% {
+    width: 100px;
+    height: 100px;
+    color: yellow;
+}
+}
+
+.fas fa-truck {
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: agrandando;
+    animation-duration: 1000ms;
+
+}
+*/

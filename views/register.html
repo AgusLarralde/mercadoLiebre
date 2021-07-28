@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header>
+        <div class="box">
+            <img class = "log" src = "/img/logo-mercado-liebre.svg" alt = "Logo de Mercado Libre"/>
+            <div class="search">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <form action="register.html" method = "POST">
+                        <select name = "product">
+                            <option value="ej" selected>Buscar productos, marcas...</option>
+                            <option value="coffe">Cafetera Moulinex</option>
+                            <option value="mac">MacBook Pro 2019</option>
+                            <option value="cel">Samsung Galaxy S10</option>
+                            <option value="tv">SmartTv Samsung 43"</option>
+                        </select>
+                </form>
+            </div>
+            <br>
+            <div class = "credit">
+                <div><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de crédito</div>
+            </div>
+        </div>
+        <br>
+        <nav>
+            <div class = "option">
+                <div class = "option1">
+                    <div class = "o1a"><a href = "#" >Ofertas</a></div>
+                    <div class = "o1b"><a href = "#" >Tiendas Oficiales</a></div>
+                    <div class = "o1c"><a href = "#" >Vender</a></div>
+                    <div class = "o1d"><a href = "#" >Ayuda</a></div>
+                </div>
+                <br>
+                <div class = "option2">
+                    <div class = "o2a"><a href = "/register" >Creá tu cuenta</a><i class="far fa-address-card"></i></a></div>
+                    <div class = "o2b"><a href = "/login" >Ingresá</a><i class="fas fa-sign-in-alt"></i></a></div>
+                    <div class = "o2c"><a href = "#" >Mis compras</a><i class="fas fa-shopping-basket"></i></a></div>
+                </div>
+            </div>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <div class = "register">
+            <form action="register.html" method = "POST">
+                <p>
+                    <label id = "register-text">Nombre y apellido</label>
+                </p>
+                <p>
+                    <input class = "register-input" type = "text" name = "nombre y apellido"></input>
+                </p>
+                <p>
+                    <label id = "register-text">Nombre de usuari@</label>
+                </p>
+                <p>
+                    <input class = "register-input" type = "text" name = "ususario"></input>
+                </p>
+                <p>
+                    <label id = "register-text">E-mail</label>
+                </p>
+                <p>
+                    <input class = "register-input" type = "email" name ="email"></input> 
+                </p>
+                <p>
+                    <label id = "register-text">Fecha de nacimineto</label>
+                </p>
+                <p>
+                    <input class = "register-input" type ="date" name = "fecha"></input> 
+                </p>
+                <p>
+                    <label id = "register-text">Domicilio</label>
+                </p>
+                <p>
+                    <input class = "register-input" type = "text" name = "domicilio"></input>
+                </p>
+                <p>
+                    <label id = "register-text">Perfil del ususario</label>
+                </p>
+                <p>
+                    <select class = "register-input" name="perfil">
+                        <option type = "radio" value="comprar">Comprador</option>
+                        <option type = "radio" value="vender">Vendedor</option>
+                    </select>
+                </p>
+                    <label id = "register-text">Intereses</label>
+                </p>
+                <p>
+                    <select class = "register-input" name="intereses">
+                        <option type = "checkbox" value="electro">Electro</option>
+                        <option type = "checkbox" value="moda">Moda</option>
+                        <option type = "checkbox" value="hogar">Hogar</option>
+                        <option type = "checkbox" value="jugueteria">Juguetería</option>
+                        <option type = "checkbox" value="healty">Vida sana</option>
+                    </select>
+                <p>
+                    <label id = "register-text">Introduzca una foto de perfil</label>
+                </p>
+                <p>
+                    <input class = "register-input" type = "file" accept = ".jpg" value = "foto" multiple></input>
+                </p>
+                <p>
+                    <label id = "register-text">Contraseña</label>
+                </p>
+                <p>
+                    <input class = "register-input" type = "password" name = "clave"></input>
+                </p>
+                <p>
+                    <label id = "register-text">Confirmar contraseña</label>
+                </p>
+                <p>
+                    <input class = "register-input" type = "password" name = "clave"></input> 
+                </p>
+                <p class = "register-box-button-send">
+                    <a href="/">
+                        <input id = "register-text" class = "register-button-send" type="button" value="Enviar">
+                    </a>
+                </p>
+                <p class = "register-box-button-delete">
+                    <button id = "register-text" class = "register-button-delete" type = "reset">Borrar</button>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="icono"><i class="fas fa-credit-card"></i></div>
+        <h3 class = "h3" >Pagá con tarjeta o en efectivo</h3>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        
+        <br>
+
+        <div class="icono"><i class="fas fa-gift"></i></div>
+        <h3 class = "h3" >Envío gratis desde los $2500</h3>
+            <p>Envío por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        
+        <br>
+
+            <div class="icono"><i class="fas fa-user-shield"></i></div>
+        <h3 class = "h3" >Seguridad de principio a fin</h3>
+        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+
+        <br>
+    </footer>
+
+    <p class = copyrigth >Copyrigth © 1999-2020 MercadoLiebre S.R.L.</p>
+
+</body>
+</html>
