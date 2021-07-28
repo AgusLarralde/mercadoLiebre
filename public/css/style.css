@@ -99,13 +99,22 @@ main {
     width: 90%;
 }
 
+main .section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 main section .title {
     font-size: 24px;
     color: #666;
+    padding-left: 5px;;
 }
 
 main section article {
     background-color: white;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -155,10 +164,6 @@ main section article .discont {
 main section article .description {
     font-size: 16px;
     color: #666;
-    display: none;
-}
-main section article .description:hover {
-    display: flex;
 }
 
 footer {
@@ -304,7 +309,7 @@ main #register-text {
         height: 100%;
     }
     main section article .description {
-        display: none;
+        display: block;
     }
     /*Login*/
     main .login-input {
@@ -338,9 +343,16 @@ main #register-text {
     header .credit {
         width: 40%;
     }
+    main section article {
+        width: 45%;
+    }
     main section article:hover { 
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }    
+    main section article .description:hover {
+        display: block;
     }
+
     /*Login*/
     main .login-input {
         width: 700px;
@@ -348,6 +360,7 @@ main #register-text {
     main .login-button {
         width: 700px;
     }
+
     /*Register*/
     main .register-input {
         width: 700px;
@@ -361,6 +374,9 @@ main #register-text {
 }
 
 @media (min-width: 1100px){
+    main section article {
+        width: 23%;
+    }
     footer {
         position: relative;
     }
